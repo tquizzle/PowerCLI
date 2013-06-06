@@ -1,23 +1,17 @@
-# Datastore Functions
-#  use functions as needed...
-#
-#Get-Datastore | Get-DatastoreMountInfo | Sort Datastore, VMHost | FT -AutoSize
-#
-#Get-Datastore IX2ISCSI01 | Unmount-Datastore
-#
-#Get-Datastore IX2ISCSI01 | Get-DatastoreMountInfo | Sort Datastore, VMHost | FT -AutoSize
-#
-#Get-Datastore IX2iSCSI01 | Mount-Datastore
-#
-#Get-Datastore IX2iSCSI01 | Get-DatastoreMountInfo | Sort Datastore, VMHost | FT -AutoSize
-#
-#Get-Datastore IX2iSCSI01 | Detach-Datastore
-#
-#Get-Datastore IX2iSCSI01 | Get-DatastoreMountInfo | Sort Datastore, VMHost | FT -AutoSize
-#
-#Get-Datastore IX2iSCSI01 | Attach-datastore
-#
-#Get-Datastore IX2iSCSI01 | Get-DatastoreMountInfo | Sort Datastore, VMHost | FT -AutoSize
+<# 
+.SYNOPSIS	Datastore Functions
+.DESCRIPTION	 Use this to Get all Datastore Mount info
+.DESCRIPTION		Unmount Datastores...
+.DESCRIPTION		Mount Datastores
+.DESCRIPTION		Detach Datastores
+.DESCRIPTION		Attach Datastores
+.NOTES  
+.EXAMPLE	Get-Datastore | Get-DatastoreMountInfo | Sort Datastore, VMHost | FT -AutoSize
+.EXAMPLE	Get-Datastore ??????? | Unmount-Datastore
+.EXAMPLE	Get-Datastore ??????? | Mount-Datastore
+.EXAMPLE	Get-Datastore ??????? | Detach-Datastore
+.EXAMPLE	Get-Datastore ??????? | Attach-Datastore
+#>
 
 Function Get-DatastoreMountInfo {
   [CmdletBinding()]
