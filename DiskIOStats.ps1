@@ -1,3 +1,7 @@
+<#
+.EXAMPLE
+   ./DiskIOStats.ps1
+#>
 $vm = (Read-Host " What VM would you like to view Disk I/O Stats on? ").ToUpper()
 
 $metrics = "disk.numberwrite.summation","disk.numberread.summation"
